@@ -8,6 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- إضافة في قسم الساعة/التاريخ أو كبطاقة منفصلة -->
+<div class="card">
+    <div class="card-header">
+        <i class="fas fa-compass"></i>
+        <h2>اتجاه القبلة</h2>
+    </div>
+    <div class="qibla-container">
+        <div class="compass">
+            <div class="compass-circle" id="compass-circle">
+                <div class="compass-needle"></div>
+                <div class="compass-direction">القبلة</div>
+            </div>
+        </div>
+        <div class="qibla-degree">
+            درجة القبلة: <span id="qibla-degree">0°</span>
+        </div>
+        <button class="control-btn" id="calibrate-qibla">
+            <i class="fas fa-sync-alt"></i> معايرة
+        </button>
+    </div>
+</div>
     <style>
         * {
             margin: 0;
